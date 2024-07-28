@@ -142,6 +142,7 @@ function Login() {
         justifyContent: "center",
         alignItems: "center",
         backgroundColor: "#D3D3D3",
+        padding: "2rem",
       }}
     >
       <Stack
