@@ -2,6 +2,8 @@ import React from "react";
 import AppLayout from "../Components/Layout/AppLayout";
 import { Box, Stack, Typography } from "@mui/material";
 import { TypeAnimation } from "react-type-animation";
+import Lottie from "lottie-react";
+import a1 from "../assets/A1.json";
 
 const Home = () => {
   return (
@@ -15,11 +17,7 @@ const Home = () => {
     >
       <Stack direction={"row"} position={"fixed"} sx={{ marginTop: "-8rem" }}>
         <Typography variant="h1">Connect</Typography>
-        <Box
-          component="img"
-          src="./src/assets/Symbol.png"
-          sx={{ width: "6rem", height: "6rem", objectFit: "cover" }}
-        />
+        <Lottie animationData={a1} loop={true} />
       </Stack>
       <TypeAnimation
         sequence={[
