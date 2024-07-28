@@ -16,8 +16,12 @@ const Home = () => {
       alignItems={"center"}
     >
       <Stack direction={"row"} position={"fixed"} sx={{ marginTop: "-8rem" }}>
-        <Typography variant="h1">Connect</Typography>
-        <Lottie animationData={a1} loop={true} />
+        <Typography variant="h1">Connect - </Typography>
+        <Lottie
+          animationData={a1}
+          loop={true}
+          style={{ width: "10rem", height: "10rem", marginTop: "-2rem" }}
+        />
       </Stack>
       <TypeAnimation
         sequence={[
