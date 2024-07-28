@@ -138,7 +138,7 @@ function Login() {
         <Lottie
           animationData={animationData}
           loop={true}
-          style={{ width: "50rem" }}
+          style={{ width: "40rem" }}
         />
       </Container>
       <Container
