@@ -111,7 +111,8 @@ function Login() {
         justifyContent: "center",
         alignItems: "center",
         backgroundColor: "#D3D3D3",
-        padding: "4rem",
+        padding: "2rem",
+        overflowY: "hidden",
       }}
     >
       <Stack
@@ -150,6 +151,7 @@ function Login() {
           justifyContent: "center",
           alignItems: "center",
           zIndex: "2",
+          overflowY: "hidden",
         }}
       >
         <Paper
