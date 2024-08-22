@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import { useFileHandler, useInputValidation } from "6pp";
+import { CameraAlt as CameraAltIcon } from "@mui/icons-material";
 import {
   Avatar,
-  Box,
   Button,
   Container,
   IconButton,
@@ -10,18 +10,17 @@ import {
   TextField,
   Typography,
 } from "@mui/material";
-import { CameraAlt as CameraAltIcon } from "@mui/icons-material";
-import { VisuallyHiddenInput } from "../Components/Style/StyledComponent";
-import { useFileHandler, useInputValidation } from "6pp";
-import { usernameValidator } from "../Utils/validator";
-import { useDispatch } from "react-redux";
-import { userExists } from "../redux/reducers/auth";
-import { toast } from "react-hot-toast";
 import axios from "axios";
-import { server } from "../Constants/config";
 import Lottie from "lottie-react";
-import animationData from "../assets/Animation .json";
+import React, { useState } from "react";
+import { toast } from "react-hot-toast";
+import { useDispatch } from "react-redux";
 import a1 from "../assets/A1.json";
+import animationData from "../assets/Animation .json";
+import { VisuallyHiddenInput } from "../Components/Style/StyledComponent";
+import { server } from "../Constants/config";
+import { userExists } from "../redux/reducers/auth";
+import { usernameValidator } from "../Utils/validator";
 
 function Login() {
   const [isLogin, setisLogin] = useState(true);
